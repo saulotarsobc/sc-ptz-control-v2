@@ -6,7 +6,8 @@ const createWindow = () => {
         height: 600
     })
 
-    win.loadFile('./frontend/index.html')
+    win.loadFile('./frontend/face/index.html')
+    // win.loadFile('./frontend/gesture/index.html')
 }
 
 app.whenReady().then(() => {
