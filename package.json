@@ -1,15 +1,18 @@
 {
   "name": "sc-ptz-control-v2",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Para controlar o PTZ da camera",
+  "main": "./dist",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
-    "electron": "^32.1.2"
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.7"
   }
 }
