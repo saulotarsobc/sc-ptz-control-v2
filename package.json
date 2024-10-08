@@ -6,7 +6,8 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "cert": "electron-builder create-self-signed-cert -p cert"
   },
   "keywords": [],
   "author": "",

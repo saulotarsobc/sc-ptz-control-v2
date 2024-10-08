@@ -2,3 +2,4 @@
 .evn
 # /dist
 /out
+/cert.pfx
