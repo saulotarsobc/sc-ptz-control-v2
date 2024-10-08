@@ -6,13 +6,10 @@ const createWindow = () => {
         height: 600
     })
 
-    win.loadFile('./frontend/face/index.html')
+    // win.loadFile('./frontend/face/index.html')
     // win.loadFile('./frontend/gesture/index.html')
+    win.loadFile('./frontend/landmaker/index.html')
 }
-
-app.whenReady().then(() => {
-    createWindow()
-})
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
