@@ -1,11 +1,11 @@
-import { FaceDetector, FilesetResolver } from "../libs/js/@mediapipetasks-vision@0.10.17/vision_bundle.mjs";
+import { FaceDetector, FilesetResolver } from "../../../../node_modules/@mediapipe/tasks-vision/vision_bundle.mjs";
 
 let faceDetector;
 let runningMode = "IMAGE";
 
 // Initialize the object detector
 const initializefaceDetector = async () => {
-    const vision = await FilesetResolver.forVisionTasks("./libs/js/@mediapipetasks-vision@0.10.17/wasm");
+    const vision = await FilesetResolver.forVisionTasks("./../../../node_modules/@mediapipe/tasks-vision/wasm");
     faceDetector = await FaceDetector.createFromOptions(vision, {
         baseOptions: {
             modelAssetPath: `./models/blaze_face_short_range.tflite`,

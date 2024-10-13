@@ -26,10 +26,10 @@ win:
   asar:
   icon: public/icon.png
   artifactName: ${productName}-Setup-${version}.${ext}
-  signtoolOptions:
-    publisherName: Microsoft
-    certificateFile: ./cert.pfx
-    certificatePassword: ''
+  # signtoolOptions:
+  #   publisherName: Microsoft
+  #   certificateFile: ./MyCert.pfx
+  #   certificatePassword:
 
 # Mac
 mac:

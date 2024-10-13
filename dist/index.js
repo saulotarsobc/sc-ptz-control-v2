@@ -6,9 +6,9 @@ const createWindow = () => {
         height: 600
     })
 
-    // win.loadFile('./dist/frontend/face/index.html')
-    win.loadFile('./dist/frontend/gesture/index.html')
-    // win.loadFile('./dist/frontend/landmaker/index.html')
+    // win.loadFile('./dist/frontend/face/index.html');
+    // win.loadFile('./dist/frontend/gesture/index.html');
+    win.loadFile('./dist/frontend/landmaker/index.html')
 }
 
 app.on('window-all-closed', () => {

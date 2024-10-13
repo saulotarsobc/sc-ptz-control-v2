@@ -1,4 +1,4 @@
-import { GestureRecognizer, FilesetResolver, DrawingUtils } from "../libs/js/@mediapipetasks-vision@0.10.17/vision_bundle.mjs";
+import { DrawingUtils, FilesetResolver, GestureRecognizer } from "../../../../node_modules/@mediapipe/tasks-vision/vision_bundle.mjs";
 
 let gestureRecognizer;
 let runningMode = "IMAGE";
@@ -8,7 +8,7 @@ const videoHeight = "360px";
 const videoWidth = "480px";
 
 const createGestureRecognizer = async () => {
-    const vision = await FilesetResolver.forVisionTasks("./libs/js/@mediapipetasks-vision@0.10.17/wasm");
+    const vision = await FilesetResolver.forVisionTasks("./../../../node_modules/@mediapipe/tasks-vision/wasm");
 
     gestureRecognizer = await GestureRecognizer.createFromOptions(vision, {
         baseOptions: {

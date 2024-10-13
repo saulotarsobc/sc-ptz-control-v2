@@ -1,4 +1,4 @@
-import { FaceLandmarker, FilesetResolver, DrawingUtils } from "../libs/js/@mediapipetasks-vision@0.10.17/vision_bundle.mjs";
+import { DrawingUtils, FaceLandmarker, FilesetResolver } from "../../../../node_modules/@mediapipe/tasks-vision/vision_bundle.mjs";
 
 const videoBlendShapes = document.getElementById("video-blend-shapes");
 
@@ -12,7 +12,7 @@ const videoWidth = 480;
 // loading. Machine Learning models can be large and take a moment to
 // get everything needed to run.
 async function createFaceLandmarker() {
-    const filesetResolver = await FilesetResolver.forVisionTasks("./libs/js/@mediapipetasks-vision@0.10.17/wasm");
+    const filesetResolver = await FilesetResolver.forVisionTasks("./../../../node_modules/@mediapipe/tasks-vision/wasm");
     faceLandmarker = await FaceLandmarker.createFromOptions(filesetResolver, {
         baseOptions: {
             modelAssetPath: `./models/face_landmarker.task`,
